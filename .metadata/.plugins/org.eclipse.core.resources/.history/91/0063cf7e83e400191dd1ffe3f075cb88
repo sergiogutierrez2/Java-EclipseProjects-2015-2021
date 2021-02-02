@@ -1,0 +1,15 @@
+
+public class Board
+{
+    public static void main(String[] args)
+    {
+        // fill alternating elements with 0 1 ...
+        int[][] board = new int[8][8];
+
+
+        //print the array
+
+    }
+   
+}
+

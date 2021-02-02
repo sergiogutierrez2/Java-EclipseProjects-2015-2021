@@ -1,0 +1,17 @@
+package edu.princeton.cs.algs4;
+
+import java.util.Random;
+
+public class ThreeDice {
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        int roll1 = 1 + random.nextInt(6);
+        int roll2 = 1 + random.nextInt(6);
+        int roll3 = 1 + random.nextInt(6);
+
+        int total = roll1 + roll2 + roll3;
+
+        System.out.println(total);
+    }
+}

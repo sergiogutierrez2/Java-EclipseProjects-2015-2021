@@ -1,0 +1,22 @@
+
+public class Board
+{
+    public static void main(String[] args)
+    {
+        // fill alternating elements with 0 1 ...
+        int[][] board = new int[8][8];
+        for (int row = 0; row < 8; row++)
+        {
+           for (int column = 0; column < 8; column++)
+          {
+            board[row][column] = (row + column) % 2;
+          }
+        }
+
+
+        //print the array
+
+    }
+   
+}
+

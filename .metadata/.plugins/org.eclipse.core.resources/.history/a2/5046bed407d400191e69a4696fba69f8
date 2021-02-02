@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class JavaFactory 
+
+{
+	
+	public static void main (String[] args)
+  {
+	System.out.println("Please enter a price: " );
+	Scanner scan = new Scanner(System.in);
+	double price = scan.nextInt();
+	double discountedPrice = price/3;
+	
+	System.out.println("The price after discount is: " + discountedPrice);
+
+	System.out.println("Please enter your name: " );
+	String line = scan.nextLine();
+	System.out.println(line);
+	
+	System.out.println("All done." );
+	scan.close();
+  }            
+	
+}

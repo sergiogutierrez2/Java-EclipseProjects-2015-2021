@@ -1,0 +1,28 @@
+package MidtermProblem;
+
+import java.util.ArrayList;
+
+public class Application implements Filter {
+    EmployeeDataStorage dataStorage;
+
+    public Application(EmployeeDataStorage ds) {
+        this.dataStorage = ds;
+    }
+
+    public void printEmployee(int id) {
+        System.out.println(dataStorage.getEmployeeById(id));
+    }
+
+    public void printAllEmployees() {
+        ArrayList<String> allEmployees = dataStorage.getAllEmployees();
+        for (String employee : allEmployees) {
+            System.out.println(employee);
+        }
+    }
+
+	@Override
+	public boolean accept(String x) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

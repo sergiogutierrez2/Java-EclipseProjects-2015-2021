@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class JavaFactory {
+
+	System.out.println("Enter an int: " );
+	Scanner scan = new Scanner(System.in);
+	int age = scan.nextInt();
+	System.out.println("Enter a multiword string: ");
+	//scan.nextLine();
+	String line = scan.nextLine();
+	//System.out.println(line);
+	            
+	
+}

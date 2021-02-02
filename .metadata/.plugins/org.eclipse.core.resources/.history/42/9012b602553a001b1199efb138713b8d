@@ -1,0 +1,25 @@
+package finalMVC;
+
+import java.util.concurrent.BlockingQueue;
+
+public class Controller {
+    BlockingQueue<Message> queue;
+    StudentModel studentModel;
+    View view;
+
+    public Controller(BlockingQueue<Message> queue, StudentModel studentModel, View view) {
+    this.queue = queue;
+    this.studentModel = studentModel;
+    this.view = view;
+ }
+
+public void mainLoop()  {
+    while (view.isDisplayable()) {
+        Message message = null;
+      try {
+          message = queue.take();
+        }  catch (InterruptedException exception) {
+           // do nothing
+        }
+
+ }

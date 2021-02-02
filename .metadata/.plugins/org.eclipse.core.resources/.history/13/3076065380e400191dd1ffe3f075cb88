@@ -1,0 +1,47 @@
+/**
+ * process a 2d array of integers
+ */
+public class IntArray2DProcessor
+{
+    private int[][] matrix;
+    public IntArray2DProcessor(int[][] array)
+    {
+        matrix = array;
+    }
+    
+    /**
+     * Gets the sum of all the elements in the array
+     * return the sum of all the elements in the array
+     */
+    public int sum()
+    {
+    	 int total = 0;
+    	  for (int row = 0; row < matrix.length; row ++)
+    	  {
+    	       for (int column = 0; column < matrix[0].length; column++)
+    	       {
+    	    	   total = total + matrix[row][column];
+    	       }
+    	  }
+    	  return total;
+    }
+    
+    /**
+     * Gets the max value in the array
+     * return the max in the array
+     */
+    public int max()
+    {
+        return 0;
+    }
+    
+    /**
+     * Gets the sum of the elements in a given row
+     * @param r the row whose sum we want
+     * return the sum of the elements in a given row
+     */
+    public int sum(int r)
+    {
+        return 0;
+    }
+}

@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class Flowers 
+{
+	public static void main(String[] args)
+    {
+		ArrayList<String> flowers = new ArrayList<String>();
+		flowers.add("rose");
+		flowers.add("violet");
+		flowers.add("pansy");
+		flowers.add("zinnia");
+		
+		flowers.add(flowers.size() - 2,"lavender");
+		
+		System.out.println(flowers);
+		
+		flowers.remove(1);
+		
+		//professors.set(1,"Kim");
+		//professors.set(1,"Kim");
+		//professors.set(1,"Kim");
+		//professors.set(1,"Kim");
+		
+		System.out.println(flowers);
+	
+    }
+}

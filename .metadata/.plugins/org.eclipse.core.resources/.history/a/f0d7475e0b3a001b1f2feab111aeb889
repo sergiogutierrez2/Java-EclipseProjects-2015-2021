@@ -1,0 +1,22 @@
+package Samples;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class EmployeeClient {
+
+    public static void main(String[] args) {
+
+        EmployeeView view = new EmployeeView();
+        EmployeeModel model = new EmployeeModel();
+        EmployeeController cntlr = new EmployeeController(view, model);
+        view.open();
+
+    }
+}

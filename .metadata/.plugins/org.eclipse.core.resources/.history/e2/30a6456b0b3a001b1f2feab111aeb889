@@ -1,0 +1,18 @@
+package Samples;
+
+class EmployeeController implements ActionListener {
+
+    private EmployeeView view;
+    private EmployeeModel model;
+
+    public EmployeeController(EmployeeView v, EmployeeModel m) {
+        view = v;
+        model = m;
+        view.setController(this);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        view.setName(model.getNextName());
+    }
+}

@@ -1,0 +1,8 @@
+package Samples;
+
+class BrightWing extends FaerieDragon {
+
+	public BrightWing(boolean immuneToMagic) {
+		super(immuneToMagic);
+	}
+}

@@ -1,0 +1,9 @@
+package Samples;
+
+class BurgerTester {
+    public static void main(String[] args) {
+        ClassicalBurger classical = new ClassicalBurger();
+        Burger burger = classical;
+        burger.madeFrom();
+    }
+}

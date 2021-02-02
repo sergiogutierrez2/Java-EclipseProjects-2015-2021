@@ -1,0 +1,9 @@
+package Samples;
+
+public class FaerieDragon {
+    private boolean immuneToMagic;
+    
+    public FaerieDragon(boolean immuneToMagic) {
+        this.immuneToMagic = immuneToMagic;
+    }
+}

@@ -1,0 +1,25 @@
+package Samples;
+
+import java.util.ArrayList;
+
+public static ArrayList<String> filterStringArray(String[] a, Filter f) {
+ArrayList<String> temp = new ArrayList<>();
+for (String s: a) {
+    if (f.accept(s)) {
+        temp.add(s);
+      }
+    }
+    return temp;
+}
+
+public class Tester {
+	public static void main(String[] args) {
+		String[] arrayToFilter = new String[] {"abc", "xyz", "longstring", "121212A"};
+
+		ArrayList<String> longStrings = filterStringArray(arrayToFilter, new LongStringFilter());
+		//print result
+		ArrayList<String> stringsWithA = filterStringArray(arrayToFilter, new ContainsAFilter());
+		//print result
+
+		}
+}
